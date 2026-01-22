@@ -16,22 +16,35 @@
         </header>
 
         <main>
-            <!-- Step 1: When -->
+            <!-- Step 1: Name -->
             <section class="step step-1 active" data-step="1">
-                <h2>When did Levi poop?</h2>
-                <div class="datetime-inputs">
-                    <input type="date" id="poop-date" class="input-field">
-                    <input type="time" id="poop-time" class="input-field">
+                <h2>Who's logging this?</h2>
+                <div class="name-input-wrapper">
+                    <input type="text" id="name-input" class="input-field" placeholder="Your name" autocomplete="name">
                 </div>
-                <button class="btn-next" onclick="nextStep(1)">
+                <button class="btn-next" onclick="nextStep(1)" id="name-next-btn">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                 </button>
             </section>
 
-            <!-- Step 2: Size -->
+            <!-- Step 2: When -->
             <section class="step step-2" data-step="2">
+                <h2>When did Levi poop?</h2>
+                <div class="datetime-inputs">
+                    <input type="date" id="poop-date" class="input-field">
+                    <input type="time" id="poop-time" class="input-field">
+                </div>
+                <button class="btn-next" onclick="nextStep(2)">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- Step 3: Size -->
+            <section class="step step-3" data-step="3">
                 <h2>How big was the poop?</h2>
                 <div class="options-grid">
                     <button class="option-btn" data-value="small" onclick="selectOption(this, 'size')">
@@ -44,15 +57,15 @@
                         <span class="option-label">Large</span>
                     </button>
                 </div>
-                <button class="btn-next" onclick="nextStep(2)" disabled>
+                <button class="btn-next" onclick="nextStep(3)" disabled>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                 </button>
             </section>
 
-            <!-- Step 3: Texture -->
-            <section class="step step-3" data-step="3">
+            <!-- Step 4: Texture -->
+            <section class="step step-4" data-step="4">
                 <h2>What was the texture?</h2>
                 <div class="options-grid texture-grid">
                     <button class="option-btn" data-value="watery" onclick="selectOption(this, 'texture')">
@@ -80,15 +93,15 @@
                         <span class="option-desc">&nbsp;</span>
                     </button>
                 </div>
-                <button class="btn-next" onclick="nextStep(3)" disabled>
+                <button class="btn-next" onclick="nextStep(4)" disabled>
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
                 </button>
             </section>
 
-            <!-- Step 4: Note & Submit -->
-            <section class="step step-4" data-step="4">
+            <!-- Step 5: Note & Submit -->
+            <section class="step step-5" data-step="5">
                 <h2>Almost done!</h2>
                 <div class="summary" id="summary"></div>
                 <div class="note-section" id="note-section" style="display: none;">

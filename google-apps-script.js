@@ -4,7 +4,7 @@
  * SETUP INSTRUCTIONS:
  * 1. Create a new Google Sheet
  * 2. Name the first sheet "Entries"
- * 3. Add these headers in row 1: Timestamp | Date | Time | Size | Texture | Notes
+ * 3. Add these headers in row 1: Timestamp | Name | Date | Time | Size | Texture | Notes
  * 4. Go to Extensions > Apps Script
  * 5. Delete any existing code and paste this entire file
  * 6. Click Deploy > New deployment
@@ -31,6 +31,7 @@ function doPost(e) {
     // Append row
     sheet.appendRow([
       timestamp,
+      data.name || '',
       data.date,
       data.time,
       data.size,

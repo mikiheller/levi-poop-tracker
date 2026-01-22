@@ -103,6 +103,13 @@ main {
     color: var(--color-text);
 }
 
+/* Name Input */
+.name-input-wrapper {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 40px;
+}
+
 /* Date/Time Inputs */
 .datetime-inputs {
     display: flex;

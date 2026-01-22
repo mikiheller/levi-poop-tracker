@@ -2,6 +2,7 @@
 
 // Form data
 const formData = {
+    name: '',
     date: '',
     time: '',
     size: '',
@@ -9,13 +10,46 @@ const formData = {
     note: ''
 };
 
-// Google Apps Script Web App URL - Replace with your deployed script URL
-const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_SCRIPT_URL_HERE';
+// Google Apps Script Web App URL
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzuD52ruTFTExqp8TA_4mS5_AXO7rmZK38VYQikOsdPHWxySrUwOD_P_k3Q1KuZgDNIdA/exec';
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', () => {
+    initName();
     initDateTime();
 });
+
+// Load cached name or show name input
+function initName() {
+    const cachedName = localStorage.getItem('poopTrackerName');
+    const nameInput = document.getElementById('name-input');
+    const nameNextBtn = document.getElementById('name-next-btn');
+    
+    if (cachedName) {
+        nameInput.value = cachedName;
+        formData.name = cachedName;
+        nameNextBtn.disabled = false;
+    } else {
+        nameNextBtn.disabled = true;
+    }
+    
+    // Enable/disable next button based on name input
+    nameInput.addEventListener('input', () => {
+        const hasName = nameInput.value.trim().length > 0;
+        nameNextBtn.disabled = !hasName;
+    });
+}
+
+// Save name to cache
+function saveName() {
+    const nameInput = document.getElementById('name-input');
+    const name = nameInput.value.trim();
+    
+    if (name) {
+        localStorage.setItem('poopTrackerName', name);
+        formData.name = name;
+    }
+}
 
 // Set default date and time to now
 function initDateTime() {
@@ -56,8 +90,13 @@ function selectOption(button, field) {
 
 // Navigate to next step
 function nextStep(currentStep) {
-    // Save date/time if on step 1
+    // Save name if on step 1
     if (currentStep === 1) {
+        saveName();
+    }
+    
+    // Save date/time if on step 2
+    if (currentStep === 2) {
         formData.date = document.getElementById('poop-date').value;
         formData.time = document.getElementById('poop-time').value;
     }
@@ -70,8 +109,8 @@ function nextStep(currentStep) {
     const nextStepEl = document.querySelector(`.step-${nextStepNum}`);
     nextStepEl.classList.add('active');
     
-    // If going to step 4, update summary
-    if (nextStepNum === 4) {
+    // If going to step 5, update summary
+    if (nextStepNum === 5) {
         updateSummary();
     }
 }
@@ -91,6 +130,10 @@ function updateSummary() {
     const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
     
     summaryEl.innerHTML = `
+        <div class="summary-item">
+            <span class="summary-label">Logged by</span>
+            <span class="summary-value">${formData.name}</span>
+        </div>
         <div class="summary-item">
             <span class="summary-label">When</span>
             <span class="summary-value">${formattedDate}, ${formattedTime}</span>
@@ -129,30 +172,23 @@ async function submitForm() {
     formData.note = document.getElementById('note-input').value.trim();
     
     // Get submit button and show loading
-    const submitBtn = document.querySelector('.step-4 .btn-primary');
+    const submitBtn = document.querySelector('.step-5 .btn-primary');
     submitBtn.classList.add('loading');
     submitBtn.disabled = true;
     
     try {
-        // Check if URL is configured
-        if (GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_URL_HERE') {
-            // Demo mode - just show success
-            console.log('Demo mode - Data would be sent:', formData);
-            await new Promise(resolve => setTimeout(resolve, 500));
-        } else {
-            // Send to Google Sheets
-            await fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            });
-        }
+        // Send to Google Sheets
+        await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData)
+        });
         
         // Show success
-        document.querySelector('.step-4').classList.remove('active');
+        document.querySelector('.step-5').classList.remove('active');
         document.querySelector('.step-success').classList.add('active');
         
     } catch (error) {
@@ -166,7 +202,7 @@ async function submitForm() {
 
 // Reset form for new entry
 function resetForm() {
-    // Reset form data
+    // Reset form data (keep name cached)
     formData.size = '';
     formData.texture = '';
     formData.note = '';
@@ -176,8 +212,10 @@ function resetForm() {
         btn.classList.remove('selected');
     });
     
-    document.querySelectorAll('.btn-next').forEach((btn, index) => {
-        if (index > 0) btn.disabled = true;
+    // Reset next buttons (keep step 1 enabled since name is cached)
+    const nextBtns = document.querySelectorAll('.btn-next');
+    nextBtns.forEach((btn, index) => {
+        if (index > 1) btn.disabled = true;
     });
     
     document.getElementById('note-section').style.display = 'none';
