@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Levi's Poop Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Levi's Poop Tracker</h1>
+        </header>
+
+        <main>
+            <!-- Step 1: When -->
+            <section class="step step-1 active" data-step="1">
+                <h2>When did Levi poop?</h2>
+                <div class="datetime-inputs">
+                    <input type="date" id="poop-date" class="input-field">
+                    <input type="time" id="poop-time" class="input-field">
+                </div>
+                <button class="btn-next" onclick="nextStep(1)">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- Step 2: Size -->
+            <section class="step step-2" data-step="2">
+                <h2>How big was the poop?</h2>
+                <div class="options-grid">
+                    <button class="option-btn" data-value="small" onclick="selectOption(this, 'size')">
+                        <span class="option-label">Small</span>
+                    </button>
+                    <button class="option-btn" data-value="medium" onclick="selectOption(this, 'size')">
+                        <span class="option-label">Medium</span>
+                    </button>
+                    <button class="option-btn" data-value="large" onclick="selectOption(this, 'size')">
+                        <span class="option-label">Large</span>
+                    </button>
+                </div>
+                <button class="btn-next" onclick="nextStep(2)" disabled>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- Step 3: Texture -->
+            <section class="step step-3" data-step="3">
+                <h2>What was the texture?</h2>
+                <div class="options-grid texture-grid">
+                    <button class="option-btn" data-value="watery" onclick="selectOption(this, 'texture')">
+                        <span class="option-label">Watery</span>
+                        <span class="option-desc">like chocolate milk</span>
+                    </button>
+                    <button class="option-btn" data-value="liquidy" onclick="selectOption(this, 'texture')">
+                        <span class="option-label">Liquidy</span>
+                        <span class="option-desc">like melted soft serve</span>
+                    </button>
+                    <button class="option-btn" data-value="soft" onclick="selectOption(this, 'texture')">
+                        <span class="option-label">Soft</span>
+                        <span class="option-desc">like mashed potatoes</span>
+                    </button>
+                    <button class="option-btn" data-value="firm" onclick="selectOption(this, 'texture')">
+                        <span class="option-label">Firm</span>
+                        <span class="option-desc">like playdoh</span>
+                    </button>
+                    <button class="option-btn" data-value="hard" onclick="selectOption(this, 'texture')">
+                        <span class="option-label">Hard</span>
+                        <span class="option-desc">like small rocks</span>
+                    </button>
+                    <button class="option-btn" data-value="other" onclick="selectOption(this, 'texture')">
+                        <span class="option-label">Other</span>
+                        <span class="option-desc">&nbsp;</span>
+                    </button>
+                </div>
+                <button class="btn-next" onclick="nextStep(3)" disabled>
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </button>
+            </section>
+
+            <!-- Step 4: Note & Submit -->
+            <section class="step step-4" data-step="4">
+                <h2>Almost done!</h2>
+                <div class="summary" id="summary"></div>
+                <div class="note-section" id="note-section" style="display: none;">
+                    <textarea id="note-input" placeholder="Add your note here..." rows="3"></textarea>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-secondary" onclick="toggleNote()" id="note-toggle-btn">Add a note</button>
+                    <button class="btn-primary" onclick="submitForm()">Submit</button>
+                </div>
+            </section>
+
+            <!-- Success Screen -->
+            <section class="step step-success" data-step="success">
+                <div class="success-message">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <h2>Logged!</h2>
+                    <p>Poop entry saved successfully.</p>
+                    <button class="btn-primary" onclick="resetForm()">Log another</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
