@@ -2,132 +2,265 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Levi's Poop Tracker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <style>
+        :root {
+            --bg: #0f1117;
+            --surface: #1a1d27;
+            --surface-hover: #242836;
+            --border: #2a2e3a;
+            --text: #e4e6ef;
+            --text-muted: #8b8fa3;
+            --accent: #6c8cff;
+            --accent-glow: rgba(108, 140, 255, 0.15);
+            --good: #4ade80;
+            --warn: #fbbf24;
+            --bad: #f87171;
+            --poop: #c98f4e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        .header { padding: 2rem 2rem 1rem; max-width: 1400px; margin: 0 auto; }
+        .header h1 { font-size: 1.75rem; font-weight: 600; letter-spacing: -0.02em; }
+        .header p { color: var(--text-muted); margin-top: 0.25rem; font-size: 0.95rem; }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            padding: 1rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
+        }
+        .stat-card .label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .stat-card .value { font-size: 1.6rem; font-weight: 700; margin-top: 0.25rem; }
+        .stat-card .sub { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.15rem; }
+        .panel {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin: 1rem auto;
+            max-width: 1400px;
+            padding: 1.25rem 1.5rem;
+        }
+        .panel h2 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem; }
+        .panel .hint { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem; }
+        .chart-container { position: relative; height: 320px; }
+        .table-wrap { max-height: 560px; overflow-y: auto; border: 1px solid var(--border); border-radius: 8px; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+        thead th {
+            position: sticky; top: 0; background: var(--surface-hover);
+            text-align: left; padding: 0.6rem 0.75rem; font-weight: 600;
+            color: var(--text-muted); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border); z-index: 1;
+        }
+        tbody td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+        tbody tr:hover { background: var(--surface-hover); }
+        td.notes { color: var(--text-muted); max-width: 520px; }
+        .tag-none { color: var(--text-muted); font-style: italic; }
+        .dose-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+        .dose-chip {
+            background: var(--accent-glow); border: 1px solid var(--border);
+            border-radius: 999px; padding: 0.25rem 0.8rem; font-size: 0.8rem; color: var(--text);
+        }
+        .dose-chip b { color: var(--warn); }
+        @media (max-width: 700px) {
+            .header, .stats-row { padding-left: 1rem; padding-right: 1rem; }
+            .panel { margin: 1rem; padding: 1rem; }
+            .chart-container { height: 240px; }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Levi's Poop Tracker</h1>
-        </header>
-
-        <main>
-            <!-- Step 1: Name -->
-            <section class="step step-1 active" data-step="1">
-                <h2>Who's logging this?</h2>
-                <div class="name-input-wrapper">
-                    <input type="text" id="name-input" class="input-field" placeholder="Your name" autocomplete="name">
-                </div>
-                <button class="btn-next" onclick="nextStep(1)" id="name-next-btn">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                </button>
-            </section>
-
-            <!-- Step 2: When -->
-            <section class="step step-2" data-step="2">
-                <h2>When did Levi poop?</h2>
-                <div class="datetime-inputs">
-                    <input type="date" id="poop-date" class="input-field">
-                    <input type="time" id="poop-time" class="input-field">
-                </div>
-                <button class="btn-next" onclick="nextStep(2)">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                </button>
-            </section>
-
-            <!-- Step 3: Size -->
-            <section class="step step-3" data-step="3">
-                <h2>How big was the poop?</h2>
-                <div class="options-grid">
-                    <button class="option-btn" data-value="small" onclick="selectOption(this, 'size')">
-                        <span class="option-label">Small</span>
-                    </button>
-                    <button class="option-btn" data-value="medium" onclick="selectOption(this, 'size')">
-                        <span class="option-label">Medium</span>
-                    </button>
-                    <button class="option-btn" data-value="large" onclick="selectOption(this, 'size')">
-                        <span class="option-label">Large</span>
-                    </button>
-                </div>
-                <button class="btn-next" onclick="nextStep(3)" disabled>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                </button>
-            </section>
-
-            <!-- Step 4: Texture -->
-            <section class="step step-4" data-step="4">
-                <h2>What was the texture?</h2>
-                <div class="options-grid texture-grid">
-                    <button class="option-btn" data-value="watery" onclick="selectOption(this, 'texture')">
-                        <span class="option-label">Watery</span>
-                        <span class="option-desc">like chocolate milk</span>
-                    </button>
-                    <button class="option-btn" data-value="liquidy" onclick="selectOption(this, 'texture')">
-                        <span class="option-label">Liquidy</span>
-                        <span class="option-desc">like melted soft serve</span>
-                    </button>
-                    <button class="option-btn" data-value="soft" onclick="selectOption(this, 'texture')">
-                        <span class="option-label">Soft</span>
-                        <span class="option-desc">like mashed potatoes</span>
-                    </button>
-                    <button class="option-btn" data-value="firm" onclick="selectOption(this, 'texture')">
-                        <span class="option-label">Firm</span>
-                        <span class="option-desc">like playdoh</span>
-                    </button>
-                    <button class="option-btn" data-value="hard" onclick="selectOption(this, 'texture')">
-                        <span class="option-label">Hard</span>
-                        <span class="option-desc">like small rocks</span>
-                    </button>
-                    <button class="option-btn" data-value="other" onclick="selectOption(this, 'texture')">
-                        <span class="option-label">Other</span>
-                        <span class="option-desc">&nbsp;</span>
-                    </button>
-                </div>
-                <button class="btn-next" onclick="nextStep(4)" disabled>
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                </button>
-            </section>
-
-            <!-- Step 5: Note & Submit -->
-            <section class="step step-5" data-step="5">
-                <h2>Almost done!</h2>
-                <div class="summary" id="summary"></div>
-                <div class="note-section" id="note-section" style="display: none;">
-                    <textarea id="note-input" placeholder="Add your note here..." rows="3"></textarea>
-                </div>
-                <div class="action-buttons">
-                    <button class="btn-secondary" onclick="toggleNote()" id="note-toggle-btn">Add a note</button>
-                    <button class="btn-primary" onclick="submitForm()">Submit</button>
-                </div>
-            </section>
-
-            <!-- Success Screen -->
-            <section class="step step-success" data-step="success">
-                <div class="success-message">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                    <h2>Logged!</h2>
-                    <p>Poop entry saved successfully.</p>
-                    <button class="btn-primary" onclick="resetForm()">Log another</button>
-                </div>
-            </section>
-        </main>
+    <div class="header">
+        <h1>Levi's Poop Tracker</h1>
+        <p id="dateRange"></p>
     </div>
 
-    <script src="app.js"></script>
+    <div class="stats-row" id="statsRow"></div>
+
+    <div class="panel">
+        <h2>Poops per day</h2>
+        <div class="hint">Bars: poops logged that day. Amber step line: Miralax dose (right axis). Gray dots: days explicitly reported as no-poop. Triangles: suppository given.</div>
+        <div class="chart-container"><canvas id="poopChart"></canvas></div>
+        <div class="dose-list" id="doseList"></div>
+    </div>
+
+    <div class="panel">
+        <h2>Every entry</h2>
+        <div class="hint">Newest first. Everything that lands in the log, verbatim.</div>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Date</th><th>Time</th><th>Size</th><th>Texture</th><th>Notes</th></tr></thead>
+                <tbody id="entriesBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="poop_data.js"></script>
+    <script>
+    (function() {
+        const entries = POOP_ENTRIES;
+        const isNoPoop = e => /^no poop/i.test(e.notes || '');
+        const isNoteOnly = e => /^miralax note/i.test(e.notes || '');
+        const poops = entries.filter(e => !isNoPoop(e) && !isNoteOnly(e));
+        const noPoopDays = entries.filter(isNoPoop).map(e => e.date);
+        const suppDays = entries.filter(e => /suppositor/i.test(e.notes || '')).map(e => e.date);
+
+        const dayMs = 86400000;
+        const today = new Date(); today.setHours(0,0,0,0);
+        const firstDate = new Date(entries[0].date + 'T00:00:00');
+        const lastDate = new Date(entries[entries.length-1].date + 'T00:00:00');
+
+        // poops per day
+        const perDay = {};
+        poops.forEach(e => { perDay[e.date] = (perDay[e.date] || 0) + 1; });
+
+        // stats helpers
+        const iso = d => d.toISOString().slice(0,10);
+        function countInRange(days) {
+            const from = new Date(today.getTime() - (days-1)*dayMs);
+            let n = 0;
+            poops.forEach(e => { const d = new Date(e.date + 'T00:00:00'); if (d >= from && d <= today) n++; });
+            return n;
+        }
+        function daysWithPoop(days) {
+            const from = new Date(today.getTime() - (days-1)*dayMs);
+            const s = new Set();
+            poops.forEach(e => { const d = new Date(e.date + 'T00:00:00'); if (d >= from && d <= today) s.add(e.date); });
+            return s.size;
+        }
+        const lastPoopDate = poops.length ? new Date(poops[poops.length-1].date + 'T00:00:00') : null;
+        const daysSince = lastPoopDate ? Math.round((today - lastPoopDate)/dayMs) : null;
+
+        // longest no-poop stretch across the log
+        let longest = 0, cur = 0;
+        for (let d = new Date(firstDate); d <= lastDate; d = new Date(d.getTime()+dayMs)) {
+            if (perDay[iso(d)]) { longest = Math.max(longest, cur); cur = 0; } else { cur++; }
+        }
+        longest = Math.max(longest, cur);
+
+        // per-dose averages
+        const doseAvgs = DOSE_MARKERS.map((m, i) => {
+            const start = new Date(m.date + 'T00:00:00');
+            const end = (i+1 < DOSE_MARKERS.length) ? new Date(DOSE_MARKERS[i+1].date + 'T00:00:00') : lastDate;
+            const days = Math.max(1, Math.round((end - start)/dayMs) + (i+1 < DOSE_MARKERS.length ? 0 : 1));
+            let n = 0;
+            poops.forEach(e => { const d = new Date(e.date + 'T00:00:00'); if (d >= start && d < (i+1 < DOSE_MARKERS.length ? end : new Date(end.getTime()+dayMs))) n++; });
+            return { label: m.label, avg: (n/days).toFixed(2), days, n };
+        });
+
+        // stats cards
+        const cards = [
+            { label: 'Days since last poop', value: daysSince === null ? '-' : daysSince, sub: lastPoopDate ? 'last: ' + iso(lastPoopDate) : '' },
+            { label: 'Avg poops/day - 7 days', value: (countInRange(7)/7).toFixed(2), sub: countInRange(7) + ' logged' },
+            { label: 'Avg poops/day - 30 days', value: (countInRange(30)/30).toFixed(2), sub: countInRange(30) + ' logged' },
+            { label: 'Days with poop - 30 days', value: daysWithPoop(30) + '/30', sub: Math.round(daysWithPoop(30)/30*100) + '% of days' },
+            { label: 'Longest no-poop stretch', value: longest + 'd', sub: 'whole log' },
+            { label: 'Total poops logged', value: poops.length, sub: iso(firstDate) + ' to ' + iso(lastDate) },
+        ];
+        document.getElementById('statsRow').innerHTML = cards.map(c =>
+            `<div class="stat-card"><div class="label">${c.label}</div><div class="value">${c.value}</div><div class="sub">${c.sub}</div></div>`
+        ).join('');
+
+        document.getElementById('dateRange').textContent =
+            `${iso(firstDate)} to ${iso(lastDate)} · ${poops.length} poops · Miralax dose markers on the chart`;
+
+        // dose chips
+        document.getElementById('doseList').innerHTML = DOSE_MARKERS.map((m, i) => {
+            const a = doseAvgs[i];
+            return `<div class="dose-chip"><b>${m.label}</b> from ${m.date} · avg ${a.avg}/day (${a.n} over ${a.days}d)</div>`;
+        }).join('');
+
+        // chart datasets
+        const barData = Object.keys(perDay).sort().map(d => ({ x: d, y: perDay[d] }));
+        const noPoopPts = [...new Set(noPoopDays)].map(d => ({ x: d, y: 0 }));
+        const suppPts = [...new Set(suppDays)].map(d => ({ x: d, y: perDay[d] || 0 }));
+
+        // stepped dose line
+        const doseLine = [];
+        DOSE_MARKERS.forEach((m, i) => {
+            doseLine.push({ x: m.date, y: m.dose_g });
+        });
+        doseLine.push({ x: iso(lastDate), y: DOSE_MARKERS[DOSE_MARKERS.length-1].dose_g });
+
+        new Chart(document.getElementById('poopChart'), {
+            data: {
+                datasets: [
+                    {
+                        type: 'bar', label: 'Poops', data: barData,
+                        backgroundColor: '#c98f4e', borderRadius: 3, yAxisID: 'y', order: 2,
+                    },
+                    {
+                        type: 'scatter', label: 'Reported no-poop day', data: noPoopPts,
+                        backgroundColor: '#8b8fa3', pointRadius: 4, yAxisID: 'y', order: 1,
+                    },
+                    {
+                        type: 'scatter', label: 'Suppository', data: suppPts,
+                        backgroundColor: '#fbbf24', pointStyle: 'triangle', pointRadius: 6, yAxisID: 'y', order: 1,
+                    },
+                    {
+                        type: 'line', label: 'Miralax dose (g)', data: doseLine,
+                        borderColor: '#fbbf24', borderWidth: 2, stepped: 'before',
+                        pointRadius: 5, pointBackgroundColor: '#fbbf24', yAxisID: 'y2', order: 0,
+                    },
+                ]
+            },
+            options: {
+                responsive: true, maintainAspectRatio: false,
+                interaction: { mode: 'nearest', intersect: false },
+                scales: {
+                    x: {
+                        type: 'time', time: { unit: 'week', tooltipFormat: 'MMM d, yyyy' },
+                        grid: { color: '#2a2e3a' }, ticks: { color: '#8b8fa3' },
+                        min: iso(new Date(firstDate.getTime() - 2*dayMs)),
+                    },
+                    y: {
+                        min: 0, suggestedMax: 3, ticks: { stepSize: 1, color: '#8b8fa3' },
+                        grid: { color: '#2a2e3a' }, title: { display: true, text: 'poops/day', color: '#8b8fa3' },
+                    },
+                    y2: {
+                        position: 'right', min: 15, suggestedMax: 32,
+                        ticks: { color: '#fbbf24' }, grid: { display: false },
+                        title: { display: true, text: 'Miralax (g)', color: '#fbbf24' },
+                    },
+                },
+                plugins: {
+                    legend: { labels: { color: '#e4e6ef', boxWidth: 12 } },
+                    tooltip: {
+                        callbacks: {
+                            label: function(ctx) {
+                                if (ctx.dataset.label === 'Poops') return ctx.parsed.y + ' poop' + (ctx.parsed.y === 1 ? '' : 's');
+                                return ctx.dataset.label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // table, newest first
+        const rows = [...entries].reverse().map(e => {
+            const size = e.size || '<span class="tag-none">-</span>';
+            const texture = e.texture || '<span class="tag-none">-</span>';
+            const notes = e.notes || '<span class="tag-none">-</span>';
+            return `<tr><td>${e.date}</td><td>${e.time || '<span class="tag-none">-</span>'}</td><td>${size}</td><td>${texture}</td><td class="notes">${notes}</td></tr>`;
+        }).join('');
+        document.getElementById('entriesBody').innerHTML = rows;
+    })();
+    </script>
 </body>
 </html>
