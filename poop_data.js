@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-09-07T20:19:04Z"
+  "generated_at": "2026-09-08T03:20:03Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1449,6 +1449,24 @@ const POOP_ENTRIES = [
     "texture": "melted ice cream",
     "notes": "Peed after sitting and also pooped at 1:00pm; small amount, melted ice cream (potty-training channel in Slack)",
     "logged": "2026-09-07T20:08:10Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-07",
+    "time": "19:00",
+    "size": "big",
+    "texture": "melted ice cream",
+    "notes": "Pooped at 7:00pm; big amount, melted ice cream (forwarded from potty-training channel in Slack)",
+    "logged": "2026-09-08T03:14:52Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-07",
+    "time": "20:05",
+    "size": "",
+    "texture": "",
+    "notes": "Pooped in his diaper at 8:05pm (forwarded from potty-training channel in Slack) | Miki: Wow, this is probably why he's been sad. Stomach ache",
+    "logged": "2026-09-08T03:15:05Z",
     "by": "Miki"
   }
 ];
