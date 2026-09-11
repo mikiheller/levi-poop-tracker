@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-09-10T22:44:16Z"
+  "generated_at": "2026-09-11T21:23:02Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1485,6 +1485,15 @@ const POOP_ENTRIES = [
     "texture": "melting",
     "notes": "Asked Levi to walk to the bathroom; he peed and pooped at 2:40pm; big melting poop (forwarded from potty-training channel in Slack)",
     "logged": "2026-09-10T22:08:48Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-11",
+    "time": "14:00",
+    "size": "",
+    "texture": "",
+    "notes": "Walked to the bathroom and pooped right away at 2:00pm (potty-training channel in Slack)",
+    "logged": "2026-09-11T20:55:48Z",
     "by": "Miki"
   }
 ];
