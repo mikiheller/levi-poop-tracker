@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-09-13T02:36:40Z"
+  "generated_at": "2026-09-16T00:39:16Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1503,6 +1503,33 @@ const POOP_ENTRIES = [
     "texture": "melting",
     "notes": "Jumping on the trampoline, he looked uncomfortable; walked inside, went to the bathroom and pooped at 5:30pm; big melting poop (potty-training channel in Slack)",
     "logged": "2026-09-13T00:40:08Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-13",
+    "time": "",
+    "size": "",
+    "texture": "",
+    "notes": "No poop (reported in Slack)",
+    "logged": "2026-09-16T00:35:12Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-14",
+    "time": "",
+    "size": "",
+    "texture": "",
+    "notes": "No poop (reported in Slack)",
+    "logged": "2026-09-16T00:35:12Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-15",
+    "time": "17:25",
+    "size": "big",
+    "texture": "mashed potatoes",
+    "notes": "Pooped at 5:25pm; big amount, mashed potatoes (potty-training channel in Slack)",
+    "logged": "2026-09-16T00:25:49Z",
     "by": "Miki"
   }
 ];
