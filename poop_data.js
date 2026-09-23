@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-09-22T07:19:45Z"
+  "generated_at": "2026-09-23T02:29:44Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1575,6 +1575,15 @@ const POOP_ENTRIES = [
     "texture": "log-shaped, almost perfect consistency",
     "notes": "Pooped at like 7:00 (am/pm unspecified, time approximate per Miki); 'by far the most log-shaped poop I've seen since we started the Miralax'; not super hard, almost perfect in consistency; Miki wonders if tapering down too fast (reported in Slack)",
     "logged": "2026-09-22T07:13:49Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-09-22",
+    "time": "18:48",
+    "size": "big",
+    "texture": "melting",
+    "notes": "6:48 pm Levi pooped on the toilet before showering; big melting poop (potty-training channel in Slack)",
+    "logged": "2026-09-23T01:59:56Z",
     "by": "Miki"
   }
 ];
