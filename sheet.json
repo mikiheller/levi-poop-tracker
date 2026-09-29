@@ -1,0 +1,1642 @@
+{
+  "values": [
+    [
+      "Timestamp",
+      "Name",
+      "Date",
+      "Time",
+      "Size",
+      "Texture",
+      "Notes"
+    ],
+    [
+      "2026-02-18T07:25:07Z",
+      "Miki",
+      "2026-02-17",
+      "16:50",
+      "tiny",
+      "",
+      "Pooped on the potty, tiny amount (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-18T07:25:07Z",
+      "Miki",
+      "2026-02-17",
+      "20:20",
+      "",
+      "",
+      "Signaled 'potty' on his iPad and pooped on the potty after sitting 2 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-18T19:05:28Z",
+      "Miki",
+      "2026-02-18",
+      "",
+      "",
+      "",
+      "Pooped sometime in the morning in his nighttime diaper, exact time unknown (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-20T00:49:38Z",
+      "Miki",
+      "2026-02-19",
+      "16:42",
+      "",
+      "",
+      "Poop accident in the garage; ran to the toilet (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-21T04:31:42Z",
+      "Miki",
+      "2026-02-20",
+      "20:28",
+      "",
+      "",
+      "Pooped on the potty after sitting 12 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-21T23:48:20Z",
+      "Miki",
+      "2026-02-21",
+      "15:40",
+      "small",
+      "",
+      "Pee and small poop accident right after the pool (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-22T04:05:04Z",
+      "Miki",
+      "2026-02-21",
+      "19:59",
+      "",
+      "",
+      "Pooped on the potty (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-23T04:16:20Z",
+      "Miki",
+      "2026-02-22",
+      "20:15",
+      "",
+      "",
+      "Pooped on the potty after 5 minutes sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-23T23:25:41Z",
+      "Miki",
+      "2026-02-23",
+      "15:20",
+      "",
+      "",
+      "Pooped and peed in the toilet (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-23T17:38:08Z",
+      "Miki",
+      "2026-02-23",
+      "9:30",
+      "",
+      "",
+      "Asked for the potty and pooped after 1 minute on the toilet (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-24T21:23:47Z",
+      "Miki",
+      "2026-02-24",
+      "13:20",
+      "big",
+      "more formed than mashed potatoes",
+      "Pooped in the toilet after 10 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-25T22:25:34Z",
+      "Miki",
+      "2026-02-25",
+      "14:20",
+      "",
+      "",
+      "Pooped and peed in the toilet after 5 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-25T21:25:32Z",
+      "Miki",
+      "2026-02-25",
+      "",
+      "",
+      "",
+      "Peed and pooped at school (per school aide), time unknown (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-27T02:49:42Z",
+      "Miki",
+      "2026-02-26",
+      "18:44",
+      "",
+      "",
+      "Peed and pooped in 2 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-27T01:29:59Z",
+      "Miki",
+      "2026-02-26",
+      "9:30",
+      "",
+      "",
+      "Pooped and peed on the potty at school (per school aide) (potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-28T01:15:24Z",
+      "Miki",
+      "2026-02-27",
+      "",
+      "",
+      "",
+      "No poop (reported in potty-training channel in Slack)"
+    ],
+    [
+      "2026-02-28T21:59:10Z",
+      "Miki",
+      "2026-02-28",
+      "13:58",
+      "",
+      "",
+      "Pooped in less than a minute on the toilet (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-01T01:34:04Z",
+      "Miki",
+      "2026-02-28",
+      "17:15",
+      "",
+      "",
+      "Peed right away and pooped 4 minutes later on the potty (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-03T01:15:22Z",
+      "Miki",
+      "2026-03-02",
+      "17:10",
+      "",
+      "",
+      "Showed signs he needed to go, then pooped and peed immediately after sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-05T21:07:07Z",
+      "Miki",
+      "2026-03-05",
+      "",
+      "",
+      "",
+      "Peed and pooped on the potty at school, time unknown (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-07T01:10:46Z",
+      "Miki",
+      "2026-03-06",
+      "17:08",
+      "",
+      "",
+      "Went to the bathroom by himself and pooped on the potty after 3 minutes sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-08T02:49:19Z",
+      "Miki",
+      "2026-03-07",
+      "18:45",
+      "",
+      "",
+      "Pooped on the potty after 2 minutes sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-10T00:29:27Z",
+      "Miki",
+      "2026-03-09",
+      "17:25",
+      "",
+      "",
+      "Pooped and peed after 3 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-11T21:52:14Z",
+      "Miki",
+      "2026-03-11",
+      "14:50",
+      "",
+      "",
+      "Requested 'potty', ran to the bathroom and pooped immediately after sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-13T00:51:39Z",
+      "Miki",
+      "2026-03-12",
+      "",
+      "",
+      "",
+      "No poop (reported in potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-14T00:34:11Z",
+      "Miki",
+      "2026-03-13",
+      "17:25",
+      "",
+      "",
+      "Pooped in 3 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-15T02:12:34Z",
+      "Miki",
+      "2026-03-14",
+      "19:10",
+      "",
+      "",
+      "Pooped in 1 minute (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-16T22:15:48Z",
+      "Miki",
+      "2026-03-16",
+      "15:15",
+      "big",
+      "mashed potatoes",
+      "Requested 'need more time' and pooped two minutes later (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-17T22:02:28Z",
+      "Miki",
+      "2026-03-17",
+      "15:00",
+      "",
+      "",
+      "Touched 'go poop'; peed and started to poop within 1 minute of sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-18T00:06:38Z",
+      "Miki",
+      "2026-03-17",
+      "16:55",
+      "little",
+      "",
+      "Peed, then pooped a little bit (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-18T21:19:48Z",
+      "Miki",
+      "2026-03-18",
+      "14:19",
+      "",
+      "",
+      "Ran to the bathroom on his own, pulled down his pants, sat and pooped (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-19T00:30:31Z",
+      "Miki",
+      "2026-03-18",
+      "17:24",
+      "tiny",
+      "",
+      "Tiny bit of poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-20T03:08:18Z",
+      "Miki",
+      "2026-03-19",
+      "8:07",
+      "",
+      "",
+      "Pooped on the toilet (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-21T02:54:23Z",
+      "Miki",
+      "2026-03-20",
+      "19:53",
+      "",
+      "",
+      "Peed after 2 minutes sitting, pooped after 7 (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-21T22:38:06Z",
+      "Miki",
+      "2026-03-21",
+      "",
+      "",
+      "",
+      "Started to poop 5 minutes after sitting (time not specified; logged ~3:38pm) (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-23T00:19:55Z",
+      "Miki",
+      "2026-03-22",
+      "17:15",
+      "",
+      "",
+      "After not using the potty all day: peed after 7 minutes, pooped after 9 (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-26T00:40:45Z",
+      "Miki",
+      "2026-03-25",
+      "17:30",
+      "",
+      "",
+      "Acting uncomfortable; pooped within 1 minute of sitting, peed shortly after (potty-training channel in Slack)"
+    ],
+    [
+      "2026-03-30T21:53:22Z",
+      "Miki",
+      "2026-03-30",
+      "13:40",
+      "very large",
+      "first part very solid, then like mashed potatoes",
+      "Pooped and peed (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-01T21:29:04Z",
+      "Miki",
+      "2026-04-01",
+      "14:25",
+      "big",
+      "like mashed potatoes",
+      "Started to pull down his pants in the garage, ran to the bathroom, pooped within 30 seconds of sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-04T02:25:06Z",
+      "Miki",
+      "2026-04-03",
+      "19:23",
+      "",
+      "",
+      "Started to poop on the potty (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-05T02:52:47Z",
+      "Miki",
+      "2026-04-04",
+      "19:45",
+      "",
+      "",
+      "Said he wanted potty, peed immediately, sat another 5 minutes and pooped (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-06T03:09:27Z",
+      "Miki",
+      "2026-04-05",
+      "8:09",
+      "",
+      "",
+      "Pooped (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-08T21:45:30Z",
+      "Miki",
+      "2026-04-08",
+      "14:40",
+      "",
+      "",
+      "Pooped in pull-up (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-09T21:34:07Z",
+      "Miki",
+      "2026-04-09",
+      "14:25",
+      "big",
+      "like mashed potatoes",
+      "Very gassy, ran to the toilet, peed then pooped after another 5 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-13T20:29:36Z",
+      "Miki",
+      "2026-04-13",
+      "13:20",
+      "big",
+      "like soft serve ice cream",
+      "Acting uncomfortable; walked to the bathroom and sat by himself, started pooping after 2 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-14T22:02:59Z",
+      "Miki",
+      "2026-04-14",
+      "",
+      "",
+      "",
+      "Said 'go poop' when asked if all done and started pooping 5 minutes later (time not specified; logged ~3:02pm) (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-15T21:08:08Z",
+      "Miki",
+      "2026-04-15",
+      "14:00",
+      "",
+      "",
+      "Pooped right away (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-15T21:52:38Z",
+      "Miki",
+      "2026-04-15",
+      "14:50",
+      "",
+      "",
+      "Ran to the bathroom and pooped more; same size and texture as the first poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-16T21:04:20Z",
+      "Miki",
+      "2026-04-16",
+      "13:50",
+      "",
+      "",
+      "Peed one minute after sitting, started pooping 6 minutes later (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-17T03:49:56Z",
+      "Miki",
+      "2026-04-16",
+      "20:45",
+      "",
+      "",
+      "Pooped in his diaper while cuddling at bedtime (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-17T21:15:10Z",
+      "Miki",
+      "2026-04-17",
+      "14:10",
+      "biggest ever",
+      "like mashed potatoes",
+      "Very gassy; said 'yes'/'go poop', started after 2 minutes of sitting; caregiver: biggest poop she'd ever seen him take (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-19T23:48:35Z",
+      "Miki",
+      "2026-04-19",
+      "16:45",
+      "",
+      "",
+      "Pooped after about 10 minutes on the potty (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-20T02:46:15Z",
+      "Miki",
+      "2026-04-19",
+      "19:30",
+      "",
+      "",
+      "Pee accident in bed; pooped after 2 minutes of sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-20T20:56:57Z",
+      "Miki",
+      "2026-04-20",
+      "13:53",
+      "",
+      "",
+      "Touched 'more time' and started to poop 2 minutes later (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-21T04:32:08Z",
+      "Miki",
+      "2026-04-20",
+      "20:15",
+      "",
+      "",
+      "Pooped in his diaper while falling asleep (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-22T03:22:50Z",
+      "Miki",
+      "2026-04-21",
+      "19:45",
+      "",
+      "watery",
+      "Pooped and peed almost immediately; flushed before size could be checked, seemed pretty watery (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-24T01:11:14Z",
+      "Miki",
+      "2026-04-23",
+      "17:55",
+      "",
+      "",
+      "Went to the bathroom by himself and pooped in about 5 minutes; flushed while sitting so amount unseen (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-24T02:26:37Z",
+      "Miki",
+      "2026-04-23",
+      "19:00",
+      "little",
+      "",
+      "Peed then pooped a little (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-24T02:53:55Z",
+      "Miki",
+      "2026-04-23",
+      "19:50",
+      "",
+      "",
+      "Peed immediately then pooped again (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-26T18:40:15Z",
+      "Miki",
+      "2026-04-26",
+      "11:30",
+      "small",
+      "",
+      "Went on the potty himself; peed after 2 minutes, pooped after 10; poop sort of small (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-27T22:31:23Z",
+      "Miki",
+      "2026-04-27",
+      "15:20",
+      "medium",
+      "well formed",
+      "Guided caregiver to the bathroom, pooped and peed within 5 minutes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-28T00:01:33Z",
+      "Miki",
+      "2026-04-27",
+      "17:00",
+      "",
+      "",
+      "Started pooping (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-28T01:39:07Z",
+      "Miki",
+      "2026-04-27",
+      "18:15",
+      "small",
+      "melted",
+      "Pee accident on the way to the bathroom; small amount, melted, right after sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-04-30T04:17:45Z",
+      "Miki",
+      "2026-04-29",
+      "8:35",
+      "big",
+      "",
+      "Started pooping and ran into the bathroom; big amount (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-01T02:56:50Z",
+      "Miki",
+      "2026-04-30",
+      "7:56",
+      "",
+      "",
+      "Pooped after 10 minutes sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-04T22:05:00Z",
+      "Miki",
+      "2026-05-04",
+      "14:55",
+      "big",
+      "frozen yogurt consistency",
+      "Said 'need more time' and started to poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-08T20:33:46Z",
+      "Miki",
+      "2026-05-08",
+      "13:30",
+      "large",
+      "first part compacted with straining, second part like soft serve",
+      "10 minutes on the toilet before going (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-12T02:51:40Z",
+      "Miki",
+      "2026-05-11",
+      "17:40",
+      "big",
+      "melted ice cream",
+      "Poop accident in his pants at the park sandbox; ran to the bathroom (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-13T00:36:05Z",
+      "Miki",
+      "2026-05-12",
+      "17:15",
+      "small",
+      "melted ice cream",
+      "Needed prompting to stay seated and finish (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-13T01:55:09Z",
+      "Miki",
+      "2026-05-12",
+      "18:45",
+      "",
+      "",
+      "Ran into the bathroom, peed immediately then started to poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-13T20:29:48Z",
+      "Miki",
+      "2026-05-13",
+      "13:20",
+      "",
+      "",
+      "Walked to the bathroom on his own and started to poop within one minute (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-15T02:40:20Z",
+      "Miki",
+      "2026-05-14",
+      "19:38",
+      "",
+      "",
+      "Peed and pooped after 2 minutes sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-16T01:55:07Z",
+      "Miki",
+      "2026-05-15",
+      "18:53",
+      "",
+      "",
+      "Grabbing himself and showing signs of discomfort; pooped and peed right after sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-18T01:31:12Z",
+      "Miki",
+      "2026-05-17",
+      "18:20",
+      "",
+      "",
+      "Poop accident (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-19T02:07:48Z",
+      "Miki",
+      "2026-05-18",
+      "19:05",
+      "",
+      "",
+      "Pooping in the toilet after a pee accident (~7pm) (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-21T01:55:50Z",
+      "Miki",
+      "2026-05-20",
+      "18:15",
+      "small",
+      "frozen yogurt",
+      "Peed and pooped in the upstairs bathroom (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-21T21:50:48Z",
+      "Miki",
+      "2026-05-21",
+      "14:15",
+      "",
+      "",
+      "Pooped again around 2:15pm (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-21T21:50:48Z",
+      "Miki",
+      "2026-05-21",
+      "",
+      "",
+      "",
+      "Poop accident at school, time unknown (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-27T02:25:30Z",
+      "Miki",
+      "2026-05-26",
+      "19:22",
+      "",
+      "",
+      "Said 'potty'/'go poop', started to poop immediately after sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-27T03:07:47Z",
+      "Miki",
+      "2026-05-26",
+      "19:45",
+      "huge",
+      "",
+      "Another huge poop in the toilet; went on his own (potty-training channel in Slack)"
+    ],
+    [
+      "2026-05-29T03:06:42Z",
+      "Miki",
+      "2026-05-28",
+      "19:45",
+      "very large",
+      "frozen yogurt",
+      "Suppository given to help him poop (48 hours since last poop); peed and pooped on the potty (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-01T02:50:28Z",
+      "Miki",
+      "2026-05-31",
+      "19:37",
+      "big",
+      "melted ice cream",
+      "Went potty on his own initiative (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-05T02:40:01Z",
+      "Miki",
+      "2026-06-04",
+      "19:30",
+      "very small",
+      "",
+      "Went to the potty, peed and also pooped a very small amount (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-06T02:19:28Z",
+      "Miki",
+      "2026-06-05",
+      "19:15",
+      "",
+      "",
+      "Walked in on his own, peed immediately, then pooped a minute later (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-07T01:26:53Z",
+      "Miki",
+      "2026-06-06",
+      "18:05",
+      "medium/big",
+      "mashed potatoes",
+      "Made a 'poop face'; pooped within 1 minute of sitting (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-10T02:29:32Z",
+      "Miki",
+      "2026-06-09",
+      "19:25",
+      "big",
+      "",
+      "Grabbing himself; pooped after 2 minutes sitting, peed right after (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-11T00:06:46Z",
+      "Miki",
+      "2026-06-10",
+      "15:50",
+      "",
+      "",
+      "Grabbed caregiver's hand, took her to the bathroom and started pooping immediately; photo shared in channel for tracking (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-16T21:06:29Z",
+      "Miki",
+      "2026-06-16",
+      "14:00",
+      "",
+      "",
+      "Ran to the bathroom, peed immediately, started to poop a minute later (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-18T21:52:47Z",
+      "Miki",
+      "2026-06-18",
+      "14:50",
+      "big",
+      "very loose",
+      "Grabbing and uncomfortable at the field; pooped as soon as he sat down (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-20T15:32:03Z",
+      "Miki",
+      "2026-06-20",
+      "20:15",
+      "",
+      "",
+      "Pooped a lot in his diaper (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-26T02:04:30Z",
+      "Miki",
+      "2026-06-25",
+      "19:02",
+      "",
+      "",
+      "Sat on the potty before shower and started to poop right after (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-27T23:23:03Z",
+      "Miki",
+      "2026-06-27",
+      "",
+      "",
+      "",
+      "Started to poop right after sitting (time not specified; logged ~4:23pm) (potty-training channel in Slack)"
+    ],
+    [
+      "2026-06-30T04:42:44Z",
+      "Miki",
+      "2026-06-29",
+      "9:35",
+      "huge",
+      "",
+      "Pooped; huge poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-07-05T19:08:57Z",
+      "Miki",
+      "2026-07-05",
+      "12:05",
+      "",
+      "",
+      "Ran to the bathroom on his own and started to poop and pee immediately (potty-training channel in Slack)"
+    ],
+    [
+      "2026-07-09T01:47:16Z",
+      "Miki",
+      "2026-07-08",
+      "18:40",
+      "",
+      "",
+      "Poop at 6:40pm in the potty (reported in Slack)"
+    ],
+    [
+      "2026-07-11T00:42:29Z",
+      "Miki",
+      "2026-07-09",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-11T00:42:29Z",
+      "Miki",
+      "2026-07-10",
+      "17:30",
+      "",
+      "",
+      "Poop in toilet at 5:30pm (reported in Slack)"
+    ],
+    [
+      "2026-07-11T00:42:29Z",
+      "Miki",
+      "2026-07-10",
+      "6:45",
+      "",
+      "",
+      "Poop in nighttime diaper when he just woke up at 6:45am (reported in Slack)"
+    ],
+    [
+      "2026-07-11T22:36:38Z",
+      "Miki",
+      "2026-07-11",
+      "15:15",
+      "big",
+      "melted ice cream",
+      "Poop at 3:15pm in the toilet (reported in Slack; earlier 'June' entries corrected to July); per potty-training channel: big poop, melted ice cream"
+    ],
+    [
+      "2026-07-14T11:04:55Z",
+      "Miki",
+      "2026-07-12",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-14T11:04:55Z",
+      "Miki",
+      "2026-07-13",
+      "17:30",
+      "",
+      "",
+      "Poop in toilet at 5:30pm (reported in Slack)"
+    ],
+    [
+      "2026-07-15T14:51:45Z",
+      "Miki",
+      "2026-07-14",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-16T00:45:58Z",
+      "Miki",
+      "2026-07-15",
+      "17:30",
+      "big",
+      "very loose",
+      "Poop at 5:30pm in the toilet (reported in Slack); per potty-training channel: big poop, very loose"
+    ],
+    [
+      "2026-07-15T14:51:45Z",
+      "Miki",
+      "2026-07-15",
+      "7:00",
+      "",
+      "",
+      "Poop at 7am in nighttime diaper (reported in Slack)"
+    ],
+    [
+      "2026-07-16T23:32:31Z",
+      "Miki",
+      "2026-07-16",
+      "16:30",
+      "",
+      "",
+      "Poop at 4:30pm on potty (reported in Slack)"
+    ],
+    [
+      "2026-07-18T20:28:26Z",
+      "Miki",
+      "2026-07-17",
+      "19:30",
+      "",
+      "",
+      "Poop at 7:30pm on potty (reported in Slack)"
+    ],
+    [
+      "2026-07-19T21:03:40Z",
+      "Miki",
+      "2026-07-18",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-19T21:03:40Z",
+      "Miki",
+      "2026-07-19",
+      "14:00",
+      "",
+      "",
+      "Poop at 2pm in potty (reported in Slack)"
+    ],
+    [
+      "2026-07-22T00:21:54Z",
+      "Miki",
+      "2026-07-20",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-22T00:21:54Z",
+      "Miki",
+      "2026-07-21",
+      "20:00",
+      "",
+      "",
+      "Poop at 8pm in potty (reported in Slack)"
+    ],
+    [
+      "2026-07-23T14:37:57Z",
+      "Miki",
+      "2026-07-22",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-23T20:03:35Z",
+      "Miki",
+      "2026-07-23",
+      "15:45",
+      "",
+      "",
+      "Poop at 3:45pm in potty (reported in Slack)"
+    ],
+    [
+      "2026-07-24T22:07:21Z",
+      "Miki",
+      "2026-07-24",
+      "17:00",
+      "",
+      "",
+      "Poop at 5pm in potty (reported in Slack)"
+    ],
+    [
+      "2026-07-28T01:47:50Z",
+      "Miki",
+      "2026-07-25",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-28T01:47:50Z",
+      "Miki",
+      "2026-07-26",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-07-28T01:47:50Z",
+      "Miki",
+      "2026-07-27",
+      "18:15",
+      "",
+      "",
+      "Suppository given; poop at 6:15pm in a diaper (reported in Slack)"
+    ],
+    [
+      "2026-07-28T22:09:55Z",
+      "Miki",
+      "2026-07-28",
+      "13:30",
+      "large",
+      "well-formed",
+      "Poop at 1:30pm in the toilet, large and well-formed. Context: two days the prior week (Thu and Sat) he did not drink his melatonin because of the hospital stay; discomfort since Friday; previous day's suppository poop was soft and must have gone around this one (reported in Slack)"
+    ],
+    [
+      "2026-07-31T03:39:35Z",
+      "Miki",
+      "2026-07-29",
+      "17:00",
+      "",
+      "",
+      "Poop accident in the pool; pooped in his pool diaper, ~5pm (time per later correction; reported in Slack)"
+    ],
+    [
+      "2026-07-31T03:39:35Z",
+      "Miki",
+      "2026-07-30",
+      "20:00",
+      "",
+      "",
+      "Unusual poop accident in underwear (~8pm per later correction); seemed like he thought it was just a fart; ran to bathroom and he continued pooping in the toilet (reported in Slack)"
+    ],
+    [
+      "2026-08-02T00:33:02Z",
+      "Miki",
+      "2026-07-31",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-08-02T00:33:02Z",
+      "Miki",
+      "2026-08-01",
+      "17:30",
+      "",
+      "",
+      "Poop in toilet at 5:30pm (reported in Slack)"
+    ],
+    [
+      "2026-08-02T01:19:18Z",
+      "Miki",
+      "2026-08-01",
+      "18:15",
+      "",
+      "",
+      "Poop again at 6:15pm in the potty (reported in Slack)"
+    ],
+    [
+      "2026-08-02T22:54:35Z",
+      "Miki",
+      "2026-08-02",
+      "14:00",
+      "huge",
+      "",
+      "Poop at 2pm in toilet (reported in Slack); per potty-training channel: huge poop"
+    ],
+    [
+      "2026-08-04T04:00:24Z",
+      "Miki",
+      "2026-08-03",
+      "21:00",
+      "",
+      "",
+      "Poop at 9pm in nighttime diaper, then transitioned to potty to finish (reported in Slack)"
+    ],
+    [
+      "2026-08-05T05:52:35Z",
+      "Miki",
+      "2026-08-04",
+      "21:10",
+      "",
+      "",
+      "Poop in his diaper at 9:10pm as he was being put down (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-06T02:19:30Z",
+      "Miki",
+      "2026-08-05",
+      "19:00",
+      "",
+      "",
+      "Poop at 7pm in potty (reported in Slack)"
+    ],
+    [
+      "2026-08-07T01:37:27Z",
+      "Miki",
+      "2026-08-06",
+      "18:30",
+      "big",
+      "",
+      "Poop at 6:30pm in potty (reported in Slack); per potty-training channel: big poop"
+    ],
+    [
+      "2026-08-09T23:04:44Z",
+      "Miki",
+      "2026-08-09",
+      "15:30",
+      "",
+      "",
+      "Poop at 3:30pm in potty (reported in Slack)"
+    ],
+    [
+      "2026-08-11T14:46:09Z",
+      "Miki",
+      "2026-08-10",
+      "19:25",
+      "",
+      "",
+      "Walked to the bathroom and pooped immediately at 7:25pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-12T01:12:41Z",
+      "Miki",
+      "2026-08-11",
+      "17:30",
+      "",
+      "",
+      "Poop in the potty at 5:30pm (reported in Slack)"
+    ],
+    [
+      "2026-08-13T01:34:34Z",
+      "Miki",
+      "2026-08-12",
+      "15:29",
+      "",
+      "",
+      "Pooped immediately after sitting at 3:29pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-13T02:39:04Z",
+      "Miki",
+      "2026-08-12",
+      "18:38",
+      "",
+      "",
+      "Pooped again (second poop) and peed right away after sitting on the toilet at 6:38pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-14T06:02:26Z",
+      "Miki",
+      "2026-08-13",
+      "19:20",
+      "",
+      "",
+      "Pooped after sitting at 7:20pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-15T22:22:09Z",
+      "Miki",
+      "2026-08-15",
+      "15:20",
+      "",
+      "",
+      "Pooped right after sitting (potty-training channel in Slack; not forwarded to poop log)"
+    ],
+    [
+      "2026-08-16T01:58:38Z",
+      "Miki",
+      "2026-08-15",
+      "18:55",
+      "small",
+      "",
+      "Got up from the dining table, went to the bathroom on his own, peed immediately, and pooped out a tiny bit at 6:55pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-16T02:09:50Z",
+      "Miki",
+      "2026-08-15",
+      "19:00",
+      "big",
+      "",
+      "Immediately after, taken to the shower and made a big poop in the shower (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-18T02:09:55Z",
+      "Miki",
+      "2026-08-16",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-08-18T02:09:44Z",
+      "Miki",
+      "2026-08-17",
+      "18:00",
+      "big",
+      "",
+      "Walked himself to the potty at 6pm and did a big poop and pee (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-21T16:45:53Z",
+      "Miki",
+      "2026-08-18",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack: could not remember any poops on August 18, count as no poop)"
+    ],
+    [
+      "2026-08-20T02:04:37Z",
+      "Miki",
+      "2026-08-19",
+      "14:40",
+      "large",
+      "like mashed potatoes",
+      "Touched 'go poop' while reading a book at the library at 2:40pm; once sitting he started to poop; very large poop (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-21T16:44:13Z",
+      "Miki",
+      "2026-08-20",
+      "19:10",
+      "medium",
+      "more consistent than mashed potatoes",
+      "Pooped on the potty at 7:10pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-22T02:18:59Z",
+      "Miki",
+      "2026-08-21",
+      "19:15",
+      "",
+      "",
+      "Pooped and peed on the potty at 7:15pm (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-23T00:33:03Z",
+      "Miki",
+      "2026-08-22",
+      "17:24",
+      "small",
+      "melted ice cream",
+      "Pooped on the potty on his own initiative at 5:24pm; small poop (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-24T12:09:40Z",
+      "Miki",
+      "2026-08-23",
+      "19:30",
+      "",
+      "",
+      "Poop in toilet at 7:30pm (reported in Slack)"
+    ],
+    [
+      "2026-08-25T02:02:18Z",
+      "Miki",
+      "2026-08-24",
+      "17:03",
+      "big",
+      "",
+      "Ran to the bathroom by himself at 5:03pm, pooped and peed immediately; big poop (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-24T12:11:15Z",
+      "Miki",
+      "2026-08-24",
+      "",
+      "",
+      "",
+      "Miralax note (reported in Slack): reduced from 25g to 21g starting Aug 21; Aug 22 first day of 21g. Before Aug 8 measured by cap (likely closer to 28-30g); since Aug 8 G-tube surgery measured by scale, conclusively 25g from Aug 8."
+    ],
+    [
+      "2026-08-26T20:39:11Z",
+      "Miki",
+      "2026-08-25",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-08-26T20:38:56Z",
+      "Miki",
+      "2026-08-26",
+      "13:30",
+      "large",
+      "like melted ice cream",
+      "Walked himself to the bathroom at 1:30pm, independently peed standing up, then immediately sat down and pooped (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-27T03:03:03Z",
+      "Miki",
+      "2026-08-26",
+      "20:00",
+      "",
+      "",
+      "Poop in nighttime diaper at 8pm (reported in Slack)"
+    ],
+    [
+      "2026-08-28T01:47:49Z",
+      "Miki",
+      "2026-08-27",
+      "18:30",
+      "very big",
+      "",
+      "Back from hiking at 6:30pm, grabbed caregiver's hand to open the door, ran to the bathroom and pooped immediately; very big amount (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-29T02:37:57Z",
+      "Miki",
+      "2026-08-28",
+      "19:30",
+      "",
+      "",
+      "Poop at 7:30pm in the toilet (reported in Slack)"
+    ],
+    [
+      "2026-08-30T23:16:17Z",
+      "Miki",
+      "2026-08-30",
+      "16:13",
+      "very large",
+      "",
+      "Walked to the bathroom and had a very large poop at 4:13pm (potty-training channel in Slack)"
+    ],
+    [
+      "2026-08-31T23:55:21Z",
+      "Miki",
+      "2026-08-31",
+      "16:50",
+      "medium",
+      "mashed potatoes",
+      "Walked into the bathroom and peed and pooped after sitting at 4:50pm; medium size, mashed potatoes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-01T02:58:38Z",
+      "Miki",
+      "2026-08-31",
+      "19:40",
+      "medium",
+      "mashed potatoes",
+      "Pooped in his diaper at 7:40pm; medium size, mashed potatoes (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-03T01:36:38Z",
+      "Miki",
+      "2026-09-01",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-03T02:14:21Z",
+      "Miki",
+      "2026-09-02",
+      "19:03",
+      "big",
+      "mashed potatoes",
+      "Pooped at 7:03pm; big, mashed potatoes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-04T01:32:17Z",
+      "Miki",
+      "2026-09-03",
+      "18:27",
+      "big",
+      "mashed potatoes",
+      "Suggested he use the toilet at 6:27pm; peed standing, then sat and pooped; big amount, mashed potatoes (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-05T02:51:13Z",
+      "Miki",
+      "2026-09-04",
+      "19:48",
+      "big",
+      "melted ice cream",
+      "Pooped after sitting at 7:48pm; big poop, melted ice cream (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-06T04:25:31Z",
+      "Miki",
+      "2026-09-05",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-06T21:50:19Z",
+      "Miki",
+      "2026-09-06",
+      "14:40",
+      "medium/large",
+      "mashed potatoes",
+      "Pooped and peed at 2:40pm; medium/large, mashed potatoes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-07T20:08:10Z",
+      "Miki",
+      "2026-09-07",
+      "13:00",
+      "small",
+      "melted ice cream",
+      "Peed after sitting and also pooped at 1:00pm; small amount, melted ice cream (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-08T03:14:52Z",
+      "Miki",
+      "2026-09-07",
+      "19:00",
+      "big",
+      "melted ice cream",
+      "Pooped at 7:00pm; big amount, melted ice cream (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-08T03:15:05Z",
+      "Miki",
+      "2026-09-07",
+      "20:05",
+      "",
+      "",
+      "Pooped in his diaper at 8:05pm (forwarded from potty-training channel in Slack) | Miki: Wow, this is probably why he's been sad. Stomach ache"
+    ],
+    [
+      "2026-09-09T20:48:54Z",
+      "Miki",
+      "2026-09-09",
+      "13:40",
+      "big",
+      "melting",
+      "Holds caregiver's hand, walks to the bathroom, sits and poops immediately at 1:40pm; big melting poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-10T22:08:48Z",
+      "Miki",
+      "2026-09-10",
+      "14:40",
+      "big",
+      "melting",
+      "Asked Levi to walk to the bathroom; he peed and pooped at 2:40pm; big melting poop (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-11T20:55:48Z",
+      "Miki",
+      "2026-09-11",
+      "14:00",
+      "",
+      "",
+      "Walked to the bathroom and pooped right away at 2:00pm (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-13T00:40:08Z",
+      "Miki",
+      "2026-09-12",
+      "17:30",
+      "big",
+      "melting",
+      "Jumping on the trampoline, he looked uncomfortable; walked inside, went to the bathroom and pooped at 5:30pm; big melting poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-16T00:35:12Z",
+      "Miki",
+      "2026-09-13",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-16T00:35:12Z",
+      "Miki",
+      "2026-09-14",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-16T00:25:49Z",
+      "Miki",
+      "2026-09-15",
+      "17:25",
+      "big",
+      "mashed potatoes",
+      "Pooped at 5:25pm; big amount, mashed potatoes (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-18T01:20:55Z",
+      "Miki",
+      "2026-09-16",
+      "17:00",
+      "big",
+      "mashed potatoes",
+      "Pooped at 5:00pm (time approximate per Miki: 'let's call it 5pm'); big amount, mashed potatoes (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-20T15:29:43Z",
+      "Miki",
+      "2026-09-18",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-20T00:49:51Z",
+      "Miki",
+      "2026-09-19",
+      "16:48",
+      "big",
+      "",
+      "4:48 pm Levi walked to the bathroom, after seating he did a big amount of poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-22T07:13:49Z",
+      "Miki",
+      "2026-09-20",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-22T07:13:49Z",
+      "Miki",
+      "2026-09-21",
+      "",
+      "",
+      "log-shaped, almost perfect consistency",
+      "Pooped at like 7:00 (am/pm unspecified, time approximate per Miki); 'by far the most log-shaped poop I've seen since we started the Miralax'; not super hard, almost perfect in consistency; Miki wonders if tapering down too fast (reported in Slack)"
+    ],
+    [
+      "2026-09-23T01:59:56Z",
+      "Miki",
+      "2026-09-22",
+      "18:48",
+      "big",
+      "melting",
+      "6:48 pm Levi pooped on the toilet before showering; big melting poop (potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-25T02:18:11Z",
+      "Miki",
+      "2026-09-23",
+      "",
+      "",
+      "",
+      "No poop (reported in Slack)"
+    ],
+    [
+      "2026-09-25T02:17:18Z",
+      "Miki",
+      "2026-09-24",
+      "18:45",
+      "big",
+      "melting",
+      "6:45 Levi sat on the toilet before showering; big melting poop (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-27T01:48:41Z",
+      "Miki",
+      "2026-09-25",
+      "20:45",
+      "",
+      "",
+      "Pooped at 8:45pm in his nighttime diaper (reported in Slack)"
+    ],
+    [
+      "2026-09-27T22:19:28Z",
+      "Miki",
+      "2026-09-27",
+      "15:15",
+      "big",
+      "melting",
+      "3:15 pm Levi held my hand to go to the bathroom in the park; pooped immediately after sitting; big melting poop (forwarded from potty-training channel in Slack)"
+    ],
+    [
+      "2026-09-29T02:34:18Z",
+      "Miki",
+      "2026-09-28",
+      "19:33",
+      "big",
+      "melting",
+      "7:33pm pooped big amount, melted (potty-training channel in Slack)"
+    ]
+  ]
+}
