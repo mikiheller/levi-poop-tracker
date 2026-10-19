@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-10-17T06:31:19Z"
+  "generated_at": "2026-10-19T02:27:55Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1711,6 +1711,15 @@ const POOP_ENTRIES = [
     "notes": "4:45pm - big poop, the first part was very formed but the last part was very loose (potty-training channel in Slack)",
     "logged": "2026-10-16T00:23:17Z",
     "by": "Grace"
+  },
+  {
+    "date": "2026-10-16",
+    "time": "",
+    "size": "",
+    "texture": "",
+    "notes": "No poop (reported by Miki via Pebble note Oct 16)",
+    "logged": "2026-10-17T04:58:04Z",
+    "by": "Miki"
   }
 ];
 const DOSE_MARKERS = [
