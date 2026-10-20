@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-10-19T02:27:55Z"
+  "generated_at": "2026-10-20T00:35:35Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1719,6 +1719,15 @@ const POOP_ENTRIES = [
     "texture": "",
     "notes": "No poop (reported by Miki via Pebble note Oct 16)",
     "logged": "2026-10-17T04:58:04Z",
+    "by": "Miki"
+  },
+  {
+    "date": "2026-10-19",
+    "time": "3:00",
+    "size": "",
+    "texture": "",
+    "notes": "Levi pooped last night in the middle of the night, around 3am. First time since Thursday (approximate time; reported by Miki in poop-log channel in Slack)",
+    "logged": "2026-10-19T17:52:04Z",
     "by": "Miki"
   }
 ];
