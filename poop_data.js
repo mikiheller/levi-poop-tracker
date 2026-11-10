@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-11-09T22:22:10Z"
+  "generated_at": "2026-11-10T00:22:59Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1819,6 +1819,15 @@ const POOP_ENTRIES = [
     "notes": "1:30 - Levi walked himself to the bathroom and pooped a small amount. It is very loose (potty-training channel in Slack, posted by Grace Backhaus at 1:37pm Nov 9; am/pm not stated, read as 1:30pm because it was posted 1:37pm)",
     "logged": "2026-11-09T21:37:01Z",
     "by": "Grace"
+  },
+  {
+    "date": "2026-11-09",
+    "time": "16:15",
+    "size": "large",
+    "texture": "very loose",
+    "notes": "4:15 big poop very loose (potty-training channel in Slack, posted by Giuliane Messias at 4:19pm Nov 9; am/pm not stated, read as 4:15pm because it was posted 4:19pm; size read as large from 'big')",
+    "logged": "2026-11-10T00:19:19Z",
+    "by": "Giuliane"
   }
 ];
 const DOSE_MARKERS = [
