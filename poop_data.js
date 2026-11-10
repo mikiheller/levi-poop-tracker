@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-11-10T00:22:59Z"
+  "generated_at": "2026-11-10T02:23:47Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1810,6 +1810,15 @@ const POOP_ENTRIES = [
     "notes": "12pm big poop mashed potatoes (potty-training channel in Slack, posted by Giuliane Messias at 12:14pm Nov 7; size read as large from 'big')",
     "logged": "2026-11-07T20:14:20Z",
     "by": "Giuliane"
+  },
+  {
+    "date": "2026-11-08",
+    "time": "04:00",
+    "size": "small",
+    "texture": "very loose",
+    "notes": "I also forgot to note, but on the night between November 7 and November 8, at around 4 am, I believe I came into the room in the middle of the night. He had pooped in his diaper: very loose and a small amount. (potty-training channel in Slack, posted by Miki Heller at 6:05pm Nov 9; time approximate: around 4am, night of Nov 7-8, filed under Nov 8)",
+    "logged": "2026-11-10T02:05:22Z",
+    "by": "Miki"
   },
   {
     "date": "2026-11-09",
