@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-11-24T02:20:57Z"
+  "generated_at": "2026-11-25T19:50:02Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1945,6 +1945,15 @@ const POOP_ENTRIES = [
     "notes": "3:30 - medium poop, extremely loose (potty-training channel in Slack, posted by Grace Backhaus at 5:26pm Nov 23; am/pm not stated, read as 3:30pm from the post time). Context from poop-log channel, Miki Heller, 5:36pm Nov 23: \"Pretty sure he has a stomach bug, not just loose because the MiraLAX\"",
     "logged": "2026-11-24T01:26:13Z",
     "by": "Grace"
+  },
+  {
+    "date": "2026-11-25",
+    "time": "06:00",
+    "size": "large",
+    "texture": "",
+    "notes": "6am \u2014 large poop, frozen yogurt (potty-training channel in Slack, posted by Jake Heller at 11:06am Nov 25; '6am' as stated, read as the morning of Nov 25 from the post time; texture not stated)",
+    "logged": "2026-11-25T19:06:28Z",
+    "by": "Jake"
   }
 ];
 const DOSE_MARKERS = [
