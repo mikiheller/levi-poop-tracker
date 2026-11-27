@@ -1,5 +1,5 @@
 const POOP_META = {
-  "generated_at": "2026-11-27T01:13:50Z"
+  "generated_at": "2026-11-27T03:14:45Z"
 };
 const POOP_ENTRIES = [
   {
@@ -1963,6 +1963,15 @@ const POOP_ENTRIES = [
     "notes": "Midnight (last night, between 11/25 and 11/26) \u2014 medium poop, frozen yogurt (potty-training channel in Slack, posted by Jake Heller at 4:34pm Nov 26; read as 12:00am at the start of Nov 26 from 'between 11/25 and 11/26'; texture not stated)",
     "logged": "2026-11-27T00:34:36Z",
     "by": "Jake"
+  },
+  {
+    "date": "2026-11-26",
+    "time": "18:55",
+    "size": "",
+    "texture": "very loose",
+    "notes": "6:55 pm Levi pooped very loose poop. (potty-training channel in Slack, posted by Ana at 7:07pm Nov 26; size not stated)",
+    "logged": "2026-11-27T03:07:09Z",
+    "by": "Ana"
   }
 ];
 const DOSE_MARKERS = [
